@@ -14,8 +14,6 @@ namespace SharpGetSystem {
 				ServiceBase.Run(ServicesToRun);
 			} else {
 				Console.Program.Start();
-				System.Console.Write("Hit any key to continue...");
-				System.Console.ReadKey();
 			}
 		}
 	}

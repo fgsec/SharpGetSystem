@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGetSystem-Service", "SharpGetSystem-Service.csproj", "{A48793DA-060B-44A8-B370-0F5325C450D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGetSystem", "SharpGetSystem.csproj", "{024EC125-DF26-406D-8AA7-1CEA80F14011}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A48793DA-060B-44A8-B370-0F5325C450D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A48793DA-060B-44A8-B370-0F5325C450D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A48793DA-060B-44A8-B370-0F5325C450D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A48793DA-060B-44A8-B370-0F5325C450D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024EC125-DF26-406D-8AA7-1CEA80F14011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024EC125-DF26-406D-8AA7-1CEA80F14011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024EC125-DF26-406D-8AA7-1CEA80F14011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024EC125-DF26-406D-8AA7-1CEA80F14011}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {29839A19-CA4C-4E37-8C7B-D09459DDB2F0}
+		SolutionGuid = {AC8CEDA9-3AFC-4FB0-935B-BE81F3D7FA29}
 	EndGlobalSection
 EndGlobal

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SharpGetSystem-Service")]
+[assembly: AssemblyTitle("SharpGetSystem")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SharpGetSystem-Service")]
+[assembly: AssemblyProduct("SharpGetSystem")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a48793da-060b-44a8-b370-0f5325c450d9")]
+[assembly: Guid("024ec125-df26-406d-8aa7-1cea80f14011")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -11,8 +8,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SharpGetSystem_Service {
+namespace SharpGetSystem.Service {
 	public partial class Service1 : ServiceBase {
+
+		private System.ComponentModel.IContainer components = null;
 
 		public const uint SECURITY_SQOS_PRESENT = 0x00100000;
 		public const uint SECURITY_ANONYMOUS = 0 << 16;
@@ -29,7 +28,10 @@ namespace SharpGetSystem_Service {
 		 [MarshalAs(UnmanagedType.U4)] FileMode creationDisposition,
 		 uint flagsAndAttributes,
 		 IntPtr templateFile);
-
+		private void InitializeComponent() {
+			components = new System.ComponentModel.Container();
+			this.ServiceName = "Service1";
+		}
 		public Service1() {
 			InitializeComponent();
 		}

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SharpGetSystem_Console {
+namespace SharpGetSystem.Console {
 	public class Service {
 
 		public static bool installService(string name, string path) {
@@ -16,11 +16,11 @@ namespace SharpGetSystem_Console {
 				if (scService != IntPtr.Zero) {
 					Pinvoke.CloseServiceHandle(scService);
 					Pinvoke.CloseServiceHandle(scManager);
-					Console.WriteLine("[+] Success creating service!");
+					System.Console.WriteLine("[+] Success creating service!");
 					return true;
 				}
 			}
-			Console.WriteLine("[-] Error creating service (win32-{0})", System.Runtime.InteropServices.Marshal.GetLastWin32Error());
+			System.Console.WriteLine("[-] Error creating service (win32-{0})", System.Runtime.InteropServices.Marshal.GetLastWin32Error());
 			return false;
 		}
 
@@ -33,13 +33,13 @@ namespace SharpGetSystem_Console {
 					if (Pinvoke.DeleteService(scService)) {
 						Pinvoke.CloseServiceHandle(scService);
 						Pinvoke.CloseServiceHandle(scManager);
-						Console.WriteLine("[+] Success deleting service!");
+						System.Console.WriteLine("[+] Success deleting service!");
 						return true;
 					}
 
 				}
 			}
-			Console.WriteLine("[-] Error deleting service (win32-{0})", System.Runtime.InteropServices.Marshal.GetLastWin32Error());
+			System.Console.WriteLine("[-] Error deleting service (win32-{0})", System.Runtime.InteropServices.Marshal.GetLastWin32Error());
 			return false;
 		}
 
@@ -56,7 +56,7 @@ namespace SharpGetSystem_Console {
 							if (Pinvoke.ControlService(scService, Pinvoke.SERVICE_CONTROL.STOP, ref stsService)) {
 								Pinvoke.CloseServiceHandle(scService);
 								Pinvoke.CloseServiceHandle(scManager);
-								Console.WriteLine("[+] Success stopping service!");
+								System.Console.WriteLine("[+] Success stopping service!");
 								return true;
 							}
 							break;
@@ -64,7 +64,7 @@ namespace SharpGetSystem_Console {
 							if (Pinvoke.StartService(scService, 0, null)) {
 								Pinvoke.CloseServiceHandle(scService);
 								Pinvoke.CloseServiceHandle(scManager);
-								Console.WriteLine("[+] Success starting service!");
+								System.Console.WriteLine("[+] Success starting service!");
 								return true;
 							}
 							break;
@@ -74,7 +74,7 @@ namespace SharpGetSystem_Console {
 			}
 			// Ignore 109, since our service ends itself after connecting to pipe
 			if (System.Runtime.InteropServices.Marshal.GetLastWin32Error() != 109)
-				Console.WriteLine(String.Format("[-] Error doing {1} service (win32-{0})", System.Runtime.InteropServices.Marshal.GetLastWin32Error(), action));
+				System.Console.WriteLine(String.Format("[-] Error doing {1} service (win32-{0})", System.Runtime.InteropServices.Marshal.GetLastWin32Error(), action));
 			return false;
 		}
 

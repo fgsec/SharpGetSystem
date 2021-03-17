@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
 
-namespace SharpGetSystem_Console {
+
+namespace SharpGetSystem.Console {
     public class Pinvoke {
 
         enum TOKEN_TYPE : int {
@@ -211,7 +212,4 @@ namespace SharpGetSystem_Console {
 
 
     }
-
-
-
 }

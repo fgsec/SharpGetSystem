@@ -14,9 +14,11 @@ namespace SharpGetSystem.Console {
 
             Guid g = Guid.NewGuid();
 
+            System.Console.WriteLine("\n   [ SharpGetSystem _ @Fgsec ]  \n");
+
             string pipeName = @"\\.\\pipe\\4edb8323-a792-4b24-a865-1246ba3f015a"; // use dynamic one in the future
             string serviceName = g.ToString();
-
+            
             // install service first
             Service.installService(serviceName, System.Reflection.Assembly.GetExecutingAssembly().Location);
             Service.manageService(serviceName, "start");
@@ -74,7 +76,6 @@ namespace SharpGetSystem.Console {
 
             }
 
-            System.Console.WriteLine("[-] Bye");
             System.Console.ReadKey();
 
         }
